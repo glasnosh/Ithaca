@@ -1,0 +1,5 @@
+04/02/2006  Se corrige bug. Al cargar un archivo .ITK se "blanquean" los cuadros de fórmulas
+	    Al cargar/guardar archivos se crear una variable temporal que guarda el PATH y vuelve ahí la siguiente vez.	
+30/01/2006  Eliminado error en la clase "analizadorFunciones_TABLERO" función entre()
+16/02/2006  Eliminado error en la clase "analizadorFunciones_TABLERO" función entre()
+22/02/2006  Eliminado el "setCaretPosition" de botones T  y nT. El cálculo tiraba errores.

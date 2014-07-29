@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+	<TITLE> Ayuda de .:ITHACA:.</ITHACA>
+</HEAD>
+
+<BODY>
+	<p><img src="./png/icono.png"> <img src="./png/ithaca.jpg"></p>
+	
+	<h3 align=left><li> INTRODUCCIÓN</h3>
+	<p> <i>Ithaca</i> pretende ser una aplicación educativa.Dentro del mundo de la lógica, resulta necesario prestar<br> atención no solamente a los avances y descubrimientos, sino también a las personas que se inician en este apasionante mundo.</p>
+	<p> Para ayudar a estas personas, esta herramienta trata de servir de apoyo en el aprendizaje y uso de<br> cuantificadores en la construcción de fórmulas lógicas. Las senténcias lógicas (fórmulas) son un paso fundamental en la formalización de conceptos e ideas<br> que aparecen en la docencia y uso de la lógica clásica y otras superiores.</p>
+	<p> El modelo fundamental y el diseño de <i>Ithaca</i> está fuertemente ligado a la forma de trabajo de la<br> conocida aplicación <i>Tarski's World</i>(Si conoce el funcionamiento de esta, no tendrá problema en utilizar <i>Ithaca</i>). Sin embargo, gracias a la<br> experiencia lograda por el equipo de desarrollo en el uso de dicha herramienta gemela, se ha perfeccionado más su modelo en los campos más<br> interesantes para los posibles alumnos. Ideas como la satisfacibilidad de fórmulas en mundos vacíos o cambiantes son los principales.</p>
+	
+	<h3 align=left><li> ITHACA</h3>
+	<p> La satisfacibilidad de las fórmulas se hace sobre un mundo ficticio finito, representado por una <i>malla</i><br> sobre la que se colocan elementos de diferentes características. Lás fórmulas o sentencias se construyen mediante precicados simples que dicen algo<br> de los elementos que hay en esa malla.</p>
+	
+	<h3 align=left><li> INTERFAZ DE USUARIO</h3>
+	<p>La ventana principal de usuario es la siguiente:</p>
+	<img src="./png/3.png">
+	<p> En la parte inferior izquierda se representa el "mundo" (la malla). Cuando no hemos introducido ningún<br> elemento en el mundo, sobre la malla aparece flotando la imagen de un "fantasma".</p>
+	<img src="./png/10.png">
+	<p> Esto se debe a que en la lógica clásica no puede existir un mundo sin elementos sobre el que se puedan<br> preguntar cosas. Cuando no hay ningún elemento introducido por el usuario la malla no va a estar "formalmente" vacía. Al menos va a tener un elemento<br> abstracto sobre el que todos los predicados siples van a ser falsos. Esto nos permite descubrir qué fórmulas son tautológicas.</p>
+	<p> En la parte inferior derecha está el espacio para introducir sentencias lógicas y analizarlas. En cada area<br> de texto se puede introducir una y analizarla sobre el mundo disponible usando su botón asociado.</i></p>
+	<img src="./png/12.png">
+	
+	<p> En la parte superior se encuentra un teclado. Su misión es simplificar la construcción de sentencias con<br> clicks de ratón. También pueden ser tecleadas a mano aunque algunos símbolos (como los cuantificadores) dificilmente se encuentran en los teclados<br> estandar. La mayoría de componentes ofrecen ayuda al usuario sin más que dejar el puntero del ratón sobre el mismo.</p>
+	<P> La apariencia de la interfaz de usuario puede ser cambiada en el menú herramientas.</p>
+	<img src="./png/5.png">
+	<p align=center><font size="-1"> <i>Theme Motif</i> en lugar el clásico <i>Metall</i></font></p>
+	
+	<h3 align = left><li> MODIFICANDO EL "MUNDO"</h3>
+	<p> Normalmente querrá intruducir y modificar los elementos de la malla a fin de adaptarlo a diferentes casos de<br> estudio. Los elementos que puede contener la malla son:</p>
+	<p> <li>Cubos: <img src="./png/cubo_azul.png"></p>
+	<p> <li>Piramides: <img src="./png/esfera_amarilla.png"></p>
+	<p> <li>Esferas: <img src="./png/piramide_roja.png"></p>
+	<p> Además todos los elementos pueden tener dos tamaños diferentes (grandes o pequeños) y tres colores (rojo, <br>amarillo y azul). Para introducir elementos en la maya se deben utilizar los controles que hay a la derecha de la barra de herramientas superior.</p>
+	<img src="./png/13.png">
+	<p> En las dos primeras cajas combo se pueden seleccionar las características de colos y tamaño. Los botones<br> permiten insertar, en una posición aleatoria del mundo, el tipo de elementos seleccionado.El límite máximo es de 15 elementos.</p>
+	<img src="./png/14.png">
+	<p> Las casillas de la malla son sensibles a las pulsaciones del ratón; de forma que al hacer click sobre <br>cualquiera de ellas, queda iluminada y en selección.</p>
+	<img src="./png/15.png">
+	<p> La selección de casillas permite cambiar casillas de posición, darles nombre y eliminarlas de la malla.<br> Para <u> eliminar un objeto</u> debe seleccionarlo haciendo click sobre la casilla que ocupa y después sobre la imagen de la "papelera" que hay a<br> la izquierda de la malla</p>
+	<img src="./png/16.png">
+	<p> Para <u>cambiar de lugar un objeto</u> seleccione (en cualquier orden) las casillas de origen y de destino<br> del mismo.</p>
+	<p> Los objetos por defecto no tienen nombre, pero es posible asignarles uno. El nombre será único en el mundo<br> y puede ser cualquiera de los caracteres "a,b,c,d,e,f,g,h". Para <u>asignar nombre a un objeto</u> seleccione la casilla que ocupa y después sobre los<br> botones de la barra de herramientas superior que representa los nombres.</p>
+	<img src="./png/17.png">
+	
+	<h3 align=left><li> CONSTRUYENDO Y EVALUANDO FÓRMULAS</h3>
+	<p>Las fórmulas se han de introducir una a una en los campos de texto. Se pueden teclear a mano pero resulta<br> más eficiente usar el teclado de ayuda.</p>
+	<img src="./png/18.png">
+	<p>Se pueden analizar las sentencias una a una o todas a la vez usando el botón <i>"ANALIZAR TODAS"</i> (también<br> disponible en el menú "Herramientas").</p>
+	<img src="./png/19.png">
+	<p> Para representar el resultado del análisis se utiliza un código de colores sobre el area de texto analizada<br> que contiene la sentencia. Es el siguiente:</p>
+	<p><li> La sentencia es una Fórmula Bien Formada, evaluable y verdadera en el mundo "malla"   <img src="./png/20.png"></p>
+	<p><li> La sentencia es una Fórmula Bien Formada, evaluable y falsa en el mundo "malla"   <img src="./png/21.png"></p>
+	<p><li> La sentencia es una Fórmula Bien Formada, pero no es evaluable en el mundo "malla"   <img src="./png/22.png"><br> (Esto suele ocurrir cuando se hace referencia al nombre de un elemento que no está en el mundo).</p>
+	<p><li> La sentencia no es una Fórmula Bien Formada   <img src="./png/23.png"></p>
+	
+	<h3 align=left><li> FÓRMULAS BIEN FORMADAS </h3>
+	<p> El que una sentencia sea una F.B.F. (Fórmula Bien Formada) es diferente a que sea evaluable. A continuación<br> se describen las reglas de la gramática que se deben utilizar para crear correctamente las fórmulas y analizarlas.</p>
+	
+	<p><font size=-1>	
+	
+		FORMULA 	= expresion<br>
+		<br>
+		expresion	=  ( expr ^ expr )<br>
+		 	ó  ( expresion v expresion )	<br>
+			 ó  NOT expresion  <br>
+		 	ó  ( expresion --> expresion )	<br>
+		 	ó  ( expresion <-> expresion )<br>
+		 	ó  CUANTIFICADOR expresion<br>
+		 	ó  FUNCION<br>
+		 	ó  ( expr )<br>
+		<br>
+		<br>
+		<br>
+		FUNCCION=	GRANDE ( PARAMETRO )<br>
+		 	ó  PEQUENHO ( PARAMETRO )		<br>
+		 	ó  ROJO ( PARAMETRO )<br>
+		 	ó  AZUL ( PARAMETRO )<br>
+		 	ó  AMARILLO ( PARAMETRO )<br>
+		 	ó  ESFERA ( PARAMETRO )	<br>
+		 	ó  CUBO ( PARAMETRO )<br>
+		 	ó  PIRAMIDE ( PARAMETRO )<br>
+		 	ó  MASGRANDE ( PARAMETRO , PARAMETRO )<br>
+		 	ó  MASPEQUENHO ( PARAMETRO , PARAMETRO )<br>
+		 	ó  MISMAFORMA ( PARAMETRO , PARAMETRO )<br>
+		 	ó  MISMOCOLOR ( PARAMETRO , PARAMETRO )<br>
+		 	ó  MISMOTAMANHO ( PARAMETRO , PARAMETRO )<br>
+		 	ó  MISMAFILA ( PARAMETRO , PARAMETRO )<br>
+		 	ó  MISMACOLUMNA ( PARAMETRO , PARAMETRO )<br>
+		 	ó  IZQUIERDA ( PARAMETRO , PARAMETRO )<br>
+		 	ó  DERECHA ( PARAMETRO , PARAMETRO )<br>
+		 	ó  ARRIBA ( PARAMETRO , PARAMETRO )<br>
+		 	ó  ABAJO ( PARAMETRO , PARAMETRO )<br>
+		 	ó  ALREDEDOR ( PARAMETRO , PARAMETRO )<br>
+		 	ó  ENTRE ( PARAMETRO , PARAMETRO , PARAMETRO )<br>
+		 	ó  TAUTO ( )<br>
+		 	ó  FALSE ( )<br>
+		 	ó  ( PARAMETRO EQUAL PARAMETRO )<br>
+		<br>
+		<br>
+		CUANTIFICADOR	=	CUANTIFICADOR_UNIVERSAL VARIABLE	<br>
+			 ó  CUANTIFICADOR_EXISTENCIAL VARIABLE	<br>
+			 ó  NO_CUANTIFICADOR CUANTIFICADOR	<br>
+		<br>
+		<br>
+		PARAMETRO	=	NOMBRE<br>
+			 ó  VARIABLE<br>
+	
+		
+		<p>* Los espacios no influyen.</font></p>	 	
+		<p> La mayoría de errores de sintaxis se deben a la ausencia de los paréntesis necesarios. De esta<br> forma son sentencias:<br>
+		<b><u>CORRECTAS</u></b>:<br> (( A v B) v C) <br>   ((A^B)-->(CvD))<br>
+		<b><u>INCORRECTAS</u></b>:<br>( A v B v C) <br>   (A^B)-->(CvD)<br>
+	</font>
+	</p>
+	
+	<h3 align=left><li> ANÁLISIS ALTERNATIVOS</h3>
+	<p> Una posibilidad interesante a la hora de evaluar sentencias es poder modificar el "mundo" sobre el que<br> se hace. Normalmente la verdad o falsedad de una fórmula suele estar ligada a las características del mundo en que se evalua. Sin embargo, ciertas fórmulas,<br> llamadas "verdades lógicas" o "falsedades lógicas" no dependen del mundo en que se analicen y serán verdaderas o falsas en cualquiera de ellos<br> (idealmente en los infinitos mundos posibles). Como demostrar que una determinada fórmula es una verdad lógica es formalmente muy complicado y<br> computacionalmente caro, esa posiblidad no está implementada en <i>Ithaca</i>. 
+		<br>
+	Hay tres mundos alternativos sobre los que también se pueden analizar las fórmulas. Para hacer esto la sentencia<br> en cuestión debe estar previamente analizada sobre la malla. Los botones que realizan los análisis alternativos se encuentran en la parte<br> inferior derecha:
+	<img src="./png/24.png"><br>
+	
+	<br><img src="./png/1.png">
+	<br><img src="./png/8.png">
+	<br><img src="./png/9.png">
+	<br><img src="./png/010.png">
+	<br><img src="./png/011.png">
+	</p>
+	
+	<h3 align=left><li> GUARDANDO EL TRABAJO</h3>
+	<p> Puede almacenar el trabajo realizado (el estado de la "malla" y las fórmulas introducidas) en archivos de<br> extensión <i>.itk</i> </p>
+	<img src="./png/6.png">
+	</p>
+	<hr>
+	
+	
+
+</BODY>
+
+
+</HTML>

@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+	<TITLE> Ayuda de .:ITHACA Games:.</ITHACA>
+</HEAD>
+
+<BODY>
+	<p><img src="./png/icono_tux.png"> <img src="./png/ithaca.jpg"></p>
+
+
+<h3 align="left">ITHACA-JUEGOS</h3>
+<p><br>
+1.Descripci&oacute;n y objetivos
+<br>
+2.Funcionamiento desde el punto de vista del usuario 
+<br>
+3.Reglas de juego
+<br>
+4.Estrategias
+<br>
+5.Funcionamiento t&eacute;cnico
+<br>
+6.Funcionamiento desde el punto de vista del discente. Manager de f&oacute;rmulas
+<br>
+7.Consejos y advertencias
+<br>
+</p>
+
+<h3>1.</h3>
+ITHACA-JUEGOS es una m&aacute;quina para aprender mediante juegos la sem&aacute;ntica estrat&eacute;gica para fragmentos la l&oacute;gica cl&aacute;sica de primer orden. (La naturaleza constructiva de la sem&aacute;ntica no es aparente en esta aplicaci&oacute;n docente). La aplicaci&oacute;n est&aacute; basada en ITHACA en cuanto a su presentaci&oacute;n, su sintaxis y los modelos empleados. Sin embargo, la sem&aacute;ntica formal que se emplea y se pretende aprender/ense&ntilde;ar en ITHACA-JUEGOS es la <u>sem&aacute;ntica estrat&eacute;gica</u> o <u>sem&aacute;ntica de juegos</u>, adaptada a la l&oacute;gica cl&aacute;sica elemental.<br>
+<br>
+El usuario juega contra la m&aacute;quina distintas f&oacute;rmulas y modelos que le son ofrecidos en distintos niveles de dificultad. Las <u>reglas del juego</u> est&aacute;n dadas por la sem&aacute;ntica formal, de modo que el papel de ITHACA-JUEGOS es ofrecer al discente un rival competente en distintos juegos l&oacute;gicos. Para ello se han dise&ntilde;ado dos tipos de estrategias para la m&aacute;quina a la que se enfrenta el alumno.<br>
+
+<h3>2.</h3>
+ El funcionamiento para el usuario es el siguiente. La m&aacute;quina propone una f&oacute;rmula bien formada y un modelo, que se muestran en la pantalla principal. El usuario, a la vista de ello, decide si juega como verificador o como falsador de la f&oacute;rmula en el modelo. Autom&aacute;ticamente, la m&aacute;quina adopta el rol contrario al elegido por el usuario o jugador. Una vez que los roles han sido repartidos, se mostrar&aacute;n continuamente en la parte superior de la ventana. Sendas flechas indican de qui&eacute;n es el turno de juego. Cada vez que se realiza una jugada, disminuye la complejidad l&oacute;gica de la f&oacute;rmula en juego, hasta que se alcanza una f&oacute;rmula at&oacute;mica verdadera o falsa en el modelo. Si la f&oacute;rmula at&oacute;mica alcanzada es verdadera, entonces gana el verificador, y en caso contrario el falsador. <br>
+<br>
+El s&iacute;mbolo l&oacute;gico principal de cada f&oacute;rmula en juego determina el turno correspondiente a cada jugador, de acuerdo con las <u>reglas del juego</u>. Por lo tanto los turnos no se reparten alternativa y sucesivamente. <br>
+Hay jugadas de dos tipos: elegir subf&oacute;rmula o bien elegir objeto. El primer tipo de jugada consiste en elegir la subf&oacute;rmula A &oacute; B en f&oacute;rmulas del tipo A->B, A^B, AvB. El segundo tipo de jugada consiste en elegir un objeto del modelo para el primer cuantificador (PARATODO &oacute; EXISTEUN) de la f&oacute;rmula en juego. El usuario realiza ambas jugadas clickeando con el rat&oacute;n sobre la f&oacute;rmula deseada (primer tipo) o el objeto deseado (segundo tipo).<br>
+<br>
+
+Si la f&oacute;rmula en juego es una negaci&oacute;n (tiene la forma A) entonces no se produce una jugada de los tipos arriba se&ntilde;alados, sino que la m&aacute;quina autom&aacute;ticamente procede a cambiar los roles de los jugadores. Esto es, el verificador adopta el rol de falsador y viceversa. Ello queda indicado luminosamente en la pantalla. Una vez realizado el cambio autom&aacute;tico de roles, el juego continua habiendo prescindido de la negaci&oacute;n, de modo que el juego continua con A.<br>
+<br>
+Ithaca juegos considera f&oacute;rmulas en la forma A<->B (bicondicionales) como f&oacute;rmulas en la forma ((A->B) ^ (B->A)) (conjunciones). Por lo tanto el jugador elige entre uno de los dos condicionales. <br>
+<br>
+Cuando el turno corresponde a la m&aacute;quina, se producir&aacute; un parpadeo indicando que se ha producido un cambio en la f&oacute;rmula o en el modelo en juego. Cuando el turno corresponde al usuario humano, la m&aacute;quina lo indica en la pantalla. Una vez alcanzada una f&oacute;rmula at&oacute;mica verdadera o falsa, el juego termina indicando si la partida ha sido ganada o perdida por el usuario.
+<br>
+<h3>3.</h3>
+Las reglas de juego determinan qu&eacute; jugadas y turnos se corresponden con cada tipo de f&oacute;rmula en juego. Sea A la f&oacute;rmula en juego en cualquier estadio.<br>
+-Si A es en la forma B->C, entonces juega el verificador y elige ¬B y C<br>
+-Si A es en la forma B^C, entonces juega el falsador y elige entre B y C<br>
+-Si A es en la forma BvC, entonces juega el verificador y elige entre B y C<br>
+-Si A es en la forma B<->C, entonces juega el falsador y elige entre B->C y C->B<br>
+-Si A es en la forma ¬B, entonces cambian los roles y se sigue jugando con B<br>
+-Si A es en la forma PARATODOxB(x), entonces el falsador elige un objeto para x<br>
+-Si A es en la forma EXISTEUNxB(x), entonces el verificador elige un objeto para x<br>
+<br>
+<h3>4.</h3>
+La inteligencia de la m&aacute;quina tiene dos escalones, que se corresponden con sendas familias distintas de <u>estrategias</u> de la m&aacute;quina (barra inferior de la pantalla). En el m&aacute;s simple de los escalones, llamado <i>azar</i>, la m&aacute;quina elige de manera aleatoria entre f&oacute;rmulas u objetos de acuerdo con las reglas de juego. En el modo master, la m&aacute;quina sigue estrategias que la puedan llevar a la victoria, siempre que la f&oacute;rmula y el jugador contrario lo permitan, de acuerdo con las reglas del juego. <br>
+Las f&oacute;rmulas est&aacute;n ordenadas en tres niveles de dificultad.<br>
+En cualquier momento el usuario puede ver y mantener visible el <u>&aacute;rbol completo de decisi&oacute;n</u> correspondiente a la f&oacute;rmula, usando el bot&oacute;n correspondiente de la barra de herramientas superior.
+<br>
+<h3>5.</h3>
+Una f&oacute;rmula del lenguaje de ITHACA debe encontrarse siempre en uno de los siguientes cuatro estados:<br>
+	-Estado 1. La f&oacute;rmula est&aacute; en la forma: cuantificador(subf&oacute;rmula), esto es, asumiendo las convenciones sint&aacute;cticas de los lenguajes formales de primer orden, la forma PARATODOxA(x) &oacute; EXISTEUNxA(x). Al jugador que le corresponda seg&uacute;n las reglas de juego deber&aacute; de seleccionar un objeto para resolver la variable x, de acuerdo con sus intereses en el juego. El juego prosigue con la f&oacute;rmula resultado de substituir la variable x por el nombre del objeto seleccionado.<br>
+	-Estado 2. La f&oacute;rmula tiene una conectiva principal de car&aacute;cter sentencial (->,^,v,<->). El jugador que le corresponda seg&uacute;n las <u>reglas de juego</u> deber&aacute; seleccionar una subf&oacute;rmula. El juego prosigue con la subf&oacute;rmula seleccionada.<br>
+	-Estado 3. La f&oacute;rmula es la negaci&oacute;n de una subf&oacute;rmula o de un cuantificador. En este caso se procede al intercambio de roles verificador/falsador por parte de los dos jugadores (usuario y m&aacute;quina). El juego prosigue con la negaci&oacute;n eliminada y los roles cambiados.<br>
+	-Estado 4 (hoja). La f&oacute;rmula es at&oacute;mica. Con su verdad o falsedad en el modelo queda decidido qu&eacute; jugador gana la partida. Si su valor es verdadero, gana el jugador que en ese momento tenga el rol de verificador, y si es falsa gana el que tuviera el rol de falsador.<br>
+<br>
+<h3>6.</h3>
+El discente puede <u>introducir</u> y reordenar las f&oacute;rmulas a disposici&oacute;n del usuario o alumno de acuerdo a sus intereses docentes.
+Para ampliar o reordenar las f&oacute;rmulas y modelos con que cuenta la m&aacute;quina, puede hacerse uso del programa “Ithaca Formula Manager”, tambi&eacute;n incluido en este paquete. Su funcionamiento es simple e intuitivo, y permite insertar y eliminar f&oacute;rmulas en cada nivel de complejidad.<br>
+La pantalla para introducir f&oacute;rmulas y modelos funciona de forma similar a la de ITHACA, aunque hay algunas restricciones:
+la f&oacute;rmula introducida debe ser bien formada. La propia m&aacute;quina se encarga de verificarlo.
+El n&uacute;mero m&aacute;ximo de objetos en cada modelo es de cinco, que ser&aacute;n nombrados autom&aacute;ticamente por el sistema.
+
+<h3>7.</h3>
+En la p&aacute;gina web .... se encuentra disponible el archivo CONSEJOS Y ADVERTENCIAS
+
+</body>
+</html>
